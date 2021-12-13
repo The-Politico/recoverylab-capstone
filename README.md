@@ -2,7 +2,7 @@
 
 This repository contains the code and underlying data for [POLITICO's pandemic response scorecard](www.politico.com/interactives/2021/recovery-lab-states-pandemic-covid-ranking/).
 
-Read the full methodology here. // add link
+[Read the full methodology here](https://www.politico.com/news/2021/12/10/main-recoverylab-capstone-data-methodology-524101). 
 
 To run the analysis script:
 
@@ -23,11 +23,11 @@ run_ed = 	0
 run_master = 	1
 
 ```
-NOTE: Education testing data is intentionally not contained in this repository because of limitations discussed in the methodology. // add link
+NOTE: Education testing data is intentionally not contained in this repository because of limitations discussed [in the methodology](https://www.politico.com/news/2021/12/10/main-recoverylab-capstone-data-methodology-524101).
 * [files.json](files.json): Locations for each of the data input files
 * [scrape_fbi.py](scrape_fbi.py): Scrapes the FBI's violent crime data pages for each state, with a pause between each state
 * [fbi-to-csv.py](fbi-to-csv.py): Converts the raw FBI data to a CSV file
-* [parse_bls_states.py](parse_bls_states.py): Convert to convert raw unuemployment and jobs HTML files downloaded from BLS's multi-screen search tool. NOTE: This step could be avoided by directly downloading the CSV files from the BLS website. 
+* [parse_bls_states.py](parse_bls_states.py): Convert to convert raw unemployment and jobs HTML files downloaded from BLS's multi-screen search tool. NOTE: This step could be avoided by directly downloading the CSV files from the [BLS website](https://www.bls.gov/). 
 
 ### Directories
 
