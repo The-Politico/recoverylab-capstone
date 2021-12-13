@@ -28,10 +28,10 @@ def main():
 		vaccine_rankings = rank_vaccines(data_files['vaccines'], state_pops_df)
 		testing_rankings = rank_testing(data_files['testing'], state_pops_df, hosp_rankings)
 
-		hosp_rankings.to_csv('data/output/rankings/hosp_rankings.csv', index=0)
-		death_rankings.to_csv('data/output/rankings/death_rankings.csv', index=0)
-		vaccine_rankings.to_csv('data/output/rankings/vaccine_rankings.csv', index=0)
-		testing_rankings.to_csv('data/output/rankings/testing_rankings.csv', index=0)
+		hosp_rankings.to_csv('data/output/scorecard/hosp_scorecard.csv', index=0)
+		death_rankings.to_csv('data/output/scorecard/death_scorecard.csv', index=0)
+		vaccine_rankings.to_csv('data/output/scorecard/vaccine_scorecard.csv', index=0)
+		testing_rankings.to_csv('data/output/scorecard/testing_scorecard.csv', index=0)
 
 		overall_health_rankings = rank_overall([
 				(hosp_rankings, 25, 'hospitalizations'),
@@ -39,7 +39,7 @@ def main():
 				(vaccine_rankings, 25, 'vax'),
 				(testing_rankings, 25, 'covid_testing')
 		])
-		overall_health_rankings.to_csv('data/output/rankings/overall_health_rankings.csv', index=0)
+		overall_health_rankings.to_csv('data/output/scorecard/overall_health_scorecard.csv', index=0)
 
 
 
@@ -53,16 +53,16 @@ def main():
 		unemployment_rankings = rank_unemp_jobs(data_files['unemployment'], 'unemp')
 		jobs_rankings = rank_unemp_jobs(data_files['jobs'], 'jobs')
 
-		realgdp_rankings.to_csv('data/output/rankings/realgdp_rankings.csv', index=0)
-		unemployment_rankings.to_csv('data/output/rankings/unemployment_rankings.csv', index=0)
-		jobs_rankings.to_csv('data/output/rankings/jobs_rankings.csv', index=0)
+		realgdp_rankings.to_csv('data/output/scorecard/realgdp_scorecard.csv', index=0)
+		unemployment_rankings.to_csv('data/output/scorecard/unemployment_scorecard.csv', index=0)
+		jobs_rankings.to_csv('data/output/scorecard/jobs_scorecard.csv', index=0)
 
 		overall_economy_rankings = rank_overall([
 				(realgdp_rankings, 33.3333333, 'gdp'),
 				(unemployment_rankings, 33.3333333, 'unemp'),
 				(jobs_rankings, 33.3333333, 'jobs'),
 		])
-		overall_economy_rankings.to_csv('data/output/rankings/overall_economy_rankings.csv', index=0)
+		overall_economy_rankings.to_csv('data/output/scorecard/overall_economy_scorecard.csv', index=0)
 
 
 
@@ -75,16 +75,16 @@ def main():
 		usual_expenses_rankings = rank_hhpulse(data_files['usual_expenses'])
 		violent_crime_rankings = rank_vcrimes(data_files['violent'], state_pops_df)
 
-		food_rankings.to_csv('data/output/rankings/food_rankings.csv', index=0)
-		usual_expenses_rankings.to_csv('data/output/rankings/usual_expenses_rankings.csv', index=0)
-		violent_crime_rankings.to_csv('data/output/rankings/violent_crime_rankings.csv', index=0)
+		food_rankings.to_csv('data/output/scorecard/food_scorecard.csv', index=0)
+		usual_expenses_rankings.to_csv('data/output/scorecard/usual_expenses_scorecard.csv', index=0)
+		violent_crime_rankings.to_csv('data/output/scorecard/violent_crime_scorecard.csv', index=0)
 
 		overall_social_rankings = rank_overall([
 				(food_rankings, 33.3333333, 'food'),
 				(usual_expenses_rankings, 33.3333333, 'expenses'),
 				(violent_crime_rankings, 33.3333333, 'violent_crime'),
 		])
-		overall_social_rankings.to_csv('data/output/rankings/overall_social_rankings.csv', index=0)
+		overall_social_rankings.to_csv('data/output/scorecard/overall_social_scorecard.csv', index=0)
 
 
 	####################################
@@ -119,18 +119,18 @@ def main():
 
 		enrollment_rankings = rank_onecol(data_files['enrollment'], 'enrollment_change', 'state')
 
-		reading_map_rankings.to_csv('data/output/rankings/reading_map_rankings.csv', index=0)
-		reading_star_rankings.to_csv('data/output/rankings/reading_star_rankings.csv', index=0)
-		reading_iready_rankings.to_csv('data/output/rankings/reading_iready_rankings.csv', index=0)
-		math_map_rankings.to_csv('data/output/rankings/math_map_rankings.csv', index=0)
-		math_star_rankings.to_csv('data/output/rankings/math_star_rankings.csv', index=0)
-		math_iready_rankings.to_csv('data/output/rankings/math_iready_rankings.csv', index=0)
+		reading_map_rankings.to_csv('data/output/scorecard/reading_map_scorecard.csv', index=0)
+		reading_star_rankings.to_csv('data/output/scorecard/reading_star_scorecard.csv', index=0)
+		reading_iready_rankings.to_csv('data/output/scorecard/reading_iready_scorecard.csv', index=0)
+		math_map_rankings.to_csv('data/output/scorecard/math_map_scorecard.csv', index=0)
+		math_star_rankings.to_csv('data/output/scorecard/math_star_scorecard.csv', index=0)
+		math_iready_rankings.to_csv('data/output/scorecard/math_iready_scorecard.csv', index=0)
 
 
 
-		reading_weighted_test_rankings.to_csv('data/output/rankings/reading_weighted_test_rankings.csv', index=0)
-		math_weighted_test_rankings.to_csv('data/output/rankings/math_weighted_test_rankings.csv', index=0)
-		enrollment_rankings.to_csv('data/output/rankings/enrollment_rankings.csv', index=0)
+		reading_weighted_test_rankings.to_csv('data/output/scorecard/reading_weighted_test_scorecard.csv', index=0)
+		math_weighted_test_rankings.to_csv('data/output/scorecard/math_weighted_test_scorecard.csv', index=0)
+		enrollment_rankings.to_csv('data/output/scorecard/enrollment_scorecard.csv', index=0)
 
 
 		reading_weighted_test_rankings = group_ed_scores(reading_weighted_test_rankings)
@@ -142,7 +142,7 @@ def main():
 				(math_weighted_test_rankings, 33.333333, 'math_testing_ed'),
 				(enrollment_rankings, 33.333333, 'enrollment'),
 		])
-		overall_ed_rankings.to_csv('data/output/rankings/overall_ed_rankings.csv', index=0)
+		overall_ed_rankings.to_csv('data/output/scorecard/overall_ed_scorecard.csv', index=0)
 
 		# get_us_ed(overall_ed_rankings)
 
@@ -153,15 +153,15 @@ def main():
 		overall_dicts = {}
 
 		for item in ['social', 'economy', 'health']: # ,'ed']:
-			overall_dicts[item] = "data/output/rankings/overall_"+ item +"_rankings.csv"
+			overall_dicts[item] = "data/output/scorecard/overall_"+ item +"_scorecard.csv"
 
 
 		total_rankings_df = rank_all(overall_dicts)
 
-		total_rankings_df.to_csv("data/output/rankings/total_rankings.csv", index=0)
+		total_rankings_df.to_csv("data/output/scorecard/total_scorecard.csv", index=0)
 
 
-		get_interactive_data(overall_dicts).to_csv('data/output/rankings/interactive_data.csv', index=0)
+		get_interactive_data(overall_dicts).to_csv('data/output/scorecard/interactive_data.csv', index=0)
 
 
 
@@ -253,7 +253,7 @@ def get_interactive_data(overall_dicts):
 
 
 	# fill in total overall
-	total_df = pd.read_csv("data/output/rankings/total_rankings.csv")
+	total_df = pd.read_csv("data/output/scorecard/total_scorecard.csv")
 	total_df = total_df[['state', 'total_score']]
 	total_df['total_rank'] = total_df['total_score'].rank(ascending=False, method='max')
 	total_df = total_df.rename(columns={"state": "Abbr"})

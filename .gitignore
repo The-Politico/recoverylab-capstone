@@ -14,8 +14,8 @@ interviews*
 combine_ire*
 combine_NAEP*
 data/output/irea*
-data/output/rankings/math*
-data/output/rankings/reading**
+data/output/scorecard/math*
+data/output/scorecard/reading**
 testing-*
 data/input/map*
 data/output/weighted_at*
