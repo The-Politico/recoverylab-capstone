@@ -1,0 +1,20 @@
+# created by virtualenv automatically
+bin/
+lib/
+with-health*
+pyvenv*
+# drop ed files we are not publishing publicly
+data/input/g4*
+data/input/2021_*
+data/input/Fall *
+PoliticoStar*
+Spring 2020*
+interviews*
+combine_ire*
+combine_NAEP*
+data/output/irea*
+data/output/rankings/math*
+data/output/rankings/reading**
+testing-*
+data/input/map*
+

@@ -1,0 +1,23 @@
+{
+	"hosp": "data/input/COVID-19_Reported_Patient_Impact_and_Hospital_Capacity_by_State_Timeseries.csv",
+	"testing": "data/input/COVID-19_Diagnostic_Laboratory_Testing__PCR_Testing__Time_Series.csv",
+	"deaths": "data/input/United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv",
+	"vaccines": "data/input/COVID-19_Vaccinations_in_the_United_States_Jurisdiction.csv",
+	"realgdp": "data/input/realgdp.csv",
+	"unemployment": "data/output/unemployment-state-out.csv",
+	"jobs": "data/output/jobs-state-out.csv",
+	"food_insecurity": "data/input/food-insecurity.csv",
+	"usual_expenses": "data/input/usual-expenses.csv",
+	"violent": "data/output/fbi-violent-crimes.csv",
+	"pops": "data/input/state-pops.csv",
+	"map_testing": "data/input/map-testing.csv",
+	"star_testing": "data/input/Fall 2020 HKAP website data for Politico_2021.11.15.xlsx",
+	"star_NCEs": "data/input/PoliticoStar_HKAP_PRs and NCEs by state.csv",
+	"enrollment": "data/input/state_enrollment-noprek.csv",
+	"iready21": "data/input/2021_1122_Politico Fall 2021 Results.xlsx",
+	"iready_prepandemic": "data/input/2021_1122_Fall2021Historical.xlsx",
+	"iready_combined": "data/output/iready_combined.csv",
+	"iready_prs": "data/input/2021_1207_Politico_Median Percentiles_Spring2021and2019.xlsx",
+	"iready_prs_combined": "data/output/iready-prs-combined.csv"
+
+}
