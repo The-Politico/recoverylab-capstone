@@ -1,4 +1,5 @@
 # created by virtualenv automatically
+.DS_Store
 bin/
 lib/
 with-health*
