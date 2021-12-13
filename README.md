@@ -34,11 +34,11 @@ NOTE: Education testing data is intentionally not contained in this repository b
 * [/data/](/data/): Where all data is contained
 * [/data/input](/data/input): Raw data files to be used in the analysis. NOTE this does not include education testing files.
 * [/data/output](/data/output): All code–generated data files
-* [/data/output/rankings](/data/output/rankings): All code–generated data files that are used in rankings
+* [/data/output/scorecard](/data/output/scorecard): All code–generated data files that are used in scorecard
 
 ### Data files to note
 
-* [/data/output/rankings/interactive_data.csv](/data/output/rankings/interactive_data.csv): Data used to power the POLITICO interactive. 
-* [/data/output/rankings/total_rankings.csv](/data/output/rankings/total_rankings.csv): Summary topline scorecard data
+* [/data/output/scorecard/interactive_data.csv](/data/output/scorecard/interactive_data.csv): Data used to power the POLITICO interactive. 
+* [/data/output/scorecard/total_scorecard.csv](/data/output/scorecard/total_scorecard.csv): Summary topline scorecard data
 * [/data/input/state-pops.csv](/data/input/state-pops.csv): State populations and age breakdowns from the U.S. Census Bureau.
 
