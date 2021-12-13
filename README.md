@@ -1,4 +1,4 @@
-# POLITICO Recovery Lab - capstone
+# POLITICO Recovery Lab - Capstone data
 
 This repository contains the code and underlying data for [POLITICO's pandemic response scorecard](www.politico.com/interactives/2021/recovery-lab-states-pandemic-covid-ranking/).
 
@@ -19,7 +19,7 @@ Below are the details for what is contained in this repository:
 run_health = 	1
 run_economy = 	1
 run_social = 	1
-run_ed = 		0
+run_ed = 	0
 run_master = 	1
 
 ```
