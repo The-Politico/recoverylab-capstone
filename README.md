@@ -2,7 +2,7 @@
 
 This repository contains the code and underlying data for [POLITICO's pandemic response scorecard](www.politico.com/interactives/2021/recovery-lab-states-pandemic-covid-ranking/).
 
-[Read the full methodology here](https://www.politico.com/news/2021/12/10/main-recoverylab-capstone-data-methodology-524101). 
+[Read the full methodology here](https://www.politico.com/news/2021/12/15/main-recoverylab-capstone-data-methodology-524101). 
 
 To run the analysis script:
 
@@ -23,7 +23,7 @@ run_ed = 	0
 run_master = 	1
 
 ```
-NOTE: Education testing data is intentionally not contained in this repository because of limitations discussed [in the methodology](https://www.politico.com/news/2021/12/10/main-recoverylab-capstone-data-methodology-524101).
+NOTE: Education testing data is intentionally not contained in this repository because of limitations discussed [in the methodology](https://www.politico.com/news/2021/12/15/main-recoverylab-capstone-data-methodology-524101).
 * [files.json](files.json): Locations for each of the data input files
 * [scrape_fbi.py](scrape_fbi.py): Scrapes the FBI's violent crime data pages for each state, with a pause between each state
 * [fbi-to-csv.py](fbi-to-csv.py): Converts the raw FBI data to a CSV file
