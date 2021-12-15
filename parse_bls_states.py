@@ -22,8 +22,6 @@ def merge_tables(input_file):
 		else: 
 			# this is getting the unemployment data, and adding a column called "state"
 			dfs[i]['state'] = active_state
-			# if active_state == "Arkansas":
-			# 	print(dfs[i])
 			dfs[i] = dfs[i][dfs[i]['Year'].str.contains("P") == False]
 			for colname in dfs[i].columns:
 				dfs[i][colname] = dfs[i][colname].str.replace("\(P\)", "") 
@@ -36,7 +34,6 @@ def merge_tables(input_file):
 	if "jobs" in input_file:
 		final_df = pd.concat(all_data_dfs)
 
-		print(final_df[final_df['state'] == "Arkansas"])
 		pd.concat(all_data_dfs).to_csv('data/output/jobs-state-out.csv', index=0)
 
 
